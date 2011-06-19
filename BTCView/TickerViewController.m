@@ -1,37 +1,27 @@
 //
-//  MainViewController.m
+//  TickerViewController.m
 //  BTCView
 //
 //  Created by Fernando Chorney on 11-06-18.
 //  Copyright 2011 Rollout Studios. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "TickerViewController.h"
 
-@implementation MainViewController
 
-@synthesize tabBarController = _tabBarController;
-@synthesize tickerViewController = _tickerViewController;
-@synthesize tickerNavigationController = _tickerNavigationController;
+@implementation TickerViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.tickerViewController = [[[TickerViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
-        self.tickerNavigationController = [[[UINavigationController alloc] initWithRootViewController:self.tickerViewController] autorelease];
-        self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-        
-        [self.tabBarController setViewControllers:[NSArray arrayWithObject:self.tickerViewController]];
+        // Custom initialization
     }
     return self;
 }
 
 - (void)dealloc
 {
-    [_tabBarController release];
-    [_tickerNavigationController release];
-    [_tickerViewController release];
     [super dealloc];
 }
 
@@ -43,23 +33,14 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - Settings
-
-- (void) displaySettings {
-
-    [self setModalPresentationStyle:UIModalTransitionStyleFlipHorizontal];
-    [self presentModalViewController:self.tabBarController animated:YES];
-}
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self.navigationItem setTitle:@"Bitcoin"];
-    
-    [self.navigationItem setRightBarButtonItem:[[[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStyleBordered target:self action:@selector(displaySettings)] autorelease]];
+
+    [self.navigationItem setTitle:@"Ticker"];
+    [self.tabBarItem setTitle:@"Ticker"];
 }
 
 - (void)viewDidUnload
