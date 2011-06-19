@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BD7860913AD75100059F89E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7860813AD75100059F89E /* UIKit.framework */; };
+		9BD7860B13AD75100059F89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7860A13AD75100059F89E /* Foundation.framework */; };
+		9BD7860D13AD75100059F89E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7860C13AD75100059F89E /* CoreGraphics.framework */; };
+		9BD7861313AD75100059F89E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7861113AD75100059F89E /* InfoPlist.strings */; };
+		9BD7861613AD75100059F89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7861513AD75100059F89E /* main.m */; };
+		9BD7861913AD75100059F89E /* BTCViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7861813AD75100059F89E /* BTCViewAppDelegate.m */; };
+		9BD7861C13AD75100059F89E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7861A13AD75100059F89E /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9BD7860413AD75100059F89E /* BTCView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD7860813AD75100059F89E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9BD7860A13AD75100059F89E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9BD7860C13AD75100059F89E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9BD7861013AD75100059F89E /* BTCView-Info.plist */ = {isa = PBXFileReference; path = "BTCView-Info.plist"; sourceTree = "<group>"; };
+		9BD7861213AD75100059F89E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BD7861413AD75100059F89E /* BTCView-Prefix.pch */ = {isa = PBXFileReference; path = "BTCView-Prefix.pch"; sourceTree = "<group>"; };
+		9BD7861513AD75100059F89E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BD7861713AD75100059F89E /* BTCViewAppDelegate.h */ = {isa = PBXFileReference; path = BTCViewAppDelegate.h; sourceTree = "<group>"; };
+		9BD7861813AD75100059F89E /* BTCViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCViewAppDelegate.m; sourceTree = "<group>"; };
+		9BD7861B13AD75100059F89E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BD7860113AD75100059F89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD7860913AD75100059F89E /* UIKit.framework in Frameworks */,
+				9BD7860B13AD75100059F89E /* Foundation.framework in Frameworks */,
+				9BD7860D13AD75100059F89E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BD785F913AD75100059F89E = {
+			isa = PBXGroup;
+			children = (
+				9BD7860E13AD75100059F89E /* BTCView */,
+				9BD7860713AD75100059F89E /* Frameworks */,
+				9BD7860513AD75100059F89E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BD7860513AD75100059F89E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BD7860413AD75100059F89E /* BTCView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BD7860713AD75100059F89E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BD7860813AD75100059F89E /* UIKit.framework */,
+				9BD7860A13AD75100059F89E /* Foundation.framework */,
+				9BD7860C13AD75100059F89E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BD7860E13AD75100059F89E /* BTCView */ = {
+			isa = PBXGroup;
+			children = (
+				9BD7861713AD75100059F89E /* BTCViewAppDelegate.h */,
+				9BD7861813AD75100059F89E /* BTCViewAppDelegate.m */,
+				9BD7861A13AD75100059F89E /* MainWindow.xib */,
+				9BD7860F13AD75100059F89E /* Supporting Files */,
+			);
+			path = BTCView;
+			sourceTree = "<group>";
+		};
+		9BD7860F13AD75100059F89E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BD7861013AD75100059F89E /* BTCView-Info.plist */,
+				9BD7861113AD75100059F89E /* InfoPlist.strings */,
+				9BD7861413AD75100059F89E /* BTCView-Prefix.pch */,
+				9BD7861513AD75100059F89E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BD7860313AD75100059F89E /* BTCView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD7861F13AD75100059F89E /* Build configuration list for PBXNativeTarget "BTCView" */;
+			buildPhases = (
+				9BD7860013AD75100059F89E /* Sources */,
+				9BD7860113AD75100059F89E /* Frameworks */,
+				9BD7860213AD75100059F89E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTCView;
+			productName = BTCView;
+			productReference = 9BD7860413AD75100059F89E /* BTCView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BD785FB13AD75100059F89E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Rollout Studios";
+			};
+			buildConfigurationList = 9BD785FE13AD75100059F89E /* Build configuration list for PBXProject "BTCView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9BD785F913AD75100059F89E;
+			productRefGroup = 9BD7860513AD75100059F89E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BD7860313AD75100059F89E /* BTCView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BD7860213AD75100059F89E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD7861313AD75100059F89E /* InfoPlist.strings in Resources */,
+				9BD7861C13AD75100059F89E /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BD7860013AD75100059F89E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD7861613AD75100059F89E /* main.m in Sources */,
+				9BD7861913AD75100059F89E /* BTCViewAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BD7861113AD75100059F89E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BD7861213AD75100059F89E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9BD7861A13AD75100059F89E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BD7861B13AD75100059F89E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BD7861D13AD75100059F89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BD7861E13AD75100059F89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9BD7862013AD75100059F89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCView/BTCView-Prefix.pch";
+				INFOPLIST_FILE = "BTCView/BTCView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9BD7862113AD75100059F89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCView/BTCView-Prefix.pch";
+				INFOPLIST_FILE = "BTCView/BTCView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BD785FE13AD75100059F89E /* Build configuration list for PBXProject "BTCView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD7861D13AD75100059F89E /* Debug */,
+				9BD7861E13AD75100059F89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD7861F13AD75100059F89E /* Build configuration list for PBXNativeTarget "BTCView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD7862013AD75100059F89E /* Debug */,
+				9BD7862113AD75100059F89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BD785FB13AD75100059F89E /* Project object */;
+}
