@@ -10,12 +10,18 @@
 
 @implementation BTCViewAppDelegate
 
-
-@synthesize window=_window;
+@synthesize window = _window;
+@synthesize navigationController = _navigationController;
+@synthesize mvc = _mvc;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 320, 480)] autorelease];
+    self.mvc = [[[MainViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.mvc] autorelease];
+    
+    [self setWindow:self.window];
+    [self.window setRootViewController:self.navigationController];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -61,6 +67,8 @@
 
 - (void)dealloc
 {
+    [_mvc release];
+    [_navigationController release];
     [_window release];
     [super dealloc];
 }

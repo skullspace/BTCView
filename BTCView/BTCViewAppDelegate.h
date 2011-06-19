@@ -6,12 +6,16 @@
 //  Copyright 2011 Rollout Studios. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
 @interface BTCViewAppDelegate : NSObject <UIApplicationDelegate> {
-
+    UIWindow *_window;
+    MainViewController *_mvc;
+    UINavigationController *_navigationController;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, retain) MainViewController *mvc;
+@property (nonatomic, retain) UINavigationController *navigationController;
 
 @end
