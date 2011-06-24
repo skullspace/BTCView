@@ -8,7 +8,9 @@
 
 
 @interface MainViewController : UITableViewController {
-    
+    NSMutableArray *_data;
 }
+
+@property (nonatomic, retain) NSMutableArray *data;
 
 @end

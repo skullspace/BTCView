@@ -10,6 +10,8 @@
 
 @implementation MainViewController
 
+@synthesize data = _data;
+
 - (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
     if (self) {
@@ -29,7 +31,7 @@
 #pragma mark - Buttons
 
 - (void)editPressed:(id)sender {
-    NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:1 inSection:0]];
+    NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[self.data count] inSection:0]];
     
     if ([self.tableView isEditing]) {
         [super setEditing:NO animated:YES];
@@ -52,6 +54,13 @@
     
     [self.navigationItem setTitle:@"Bitcoin"];
     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editPressed:)]];
+    
+    // Create our Data Array
+    self.data = [[NSMutableArray new] autorelease];
+    
+    // Insert some Dummy Data
+    [self.data addObject:@"MTGox"];
+    [self.data addObject:@"BTCGuild"];
  }
 
 - (void)viewDidUnload {
@@ -86,9 +95,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if ([self.tableView isEditing]) {
-        return 2;
+        return [self.data count] + 1;
     }
-    return 1;
+    return [self.data count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -100,12 +109,12 @@
         [cell.textLabel setAdjustsFontSizeToFitWidth:YES];
     }
     
-    if ([self.tableView isEditing] && indexPath.row == 1) {
+    if ([self.tableView isEditing] && indexPath.row == [self.data count]) {
         cell.textLabel.text = @"Add Ticker/Pool/Wallet";
         return cell;
     }
     
-    cell.textLabel.text = @"Ticker/Pool/Wallet Cell";
+    cell.textLabel.text = [self.data objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -122,7 +131,7 @@
     if (![self.tableView isEditing])
         return UITableViewCellEditingStyleNone;
     
-    if (indexPath.row == 1) {
+    if (indexPath.row == [self.data count]) {
         return UITableViewCellEditingStyleInsert;
     }
     else {
@@ -151,7 +160,7 @@
         if you rearrange one of the other cells to be below this one, shit fucks up.
         How do we prevent/fix this?
      */
-    if ([self.tableView isEditing] && indexPath.row == 1)
+    if ([self.tableView isEditing] && indexPath.row == [self.data count])
         return NO;
     return YES;
 }
