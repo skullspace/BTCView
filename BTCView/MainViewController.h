@@ -6,17 +6,9 @@
 //  Copyright 2011 Rollout Studios. All rights reserved.
 //
 
-#import "TickerViewController.h"
 
 @interface MainViewController : UITableViewController {
-    UITabBarController *_tabBarController;
     
-    UINavigationController *_tickerNavigationController;
-    TickerViewController *_tickerViewController;
 }
-
-@property (nonatomic, retain) UITabBarController *tabBarController;
-@property (nonatomic, retain) UINavigationController *tickerNavigationController;
-@property (nonatomic, retain) TickerViewController *tickerViewController;
 
 @end

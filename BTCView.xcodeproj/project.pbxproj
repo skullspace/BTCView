@@ -40,7 +40,6 @@
 		9BD7861913AD75100059F89E /* BTCViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7861813AD75100059F89E /* BTCViewAppDelegate.m */; };
 		9BD7861C13AD75100059F89E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7861A13AD75100059F89E /* MainWindow.xib */; };
 		9BD7862C13AD76580059F89E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7862B13AD76580059F89E /* MainViewController.m */; };
-		9BFC758C13AD7971004E6914 /* TickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC758B13AD7971004E6914 /* TickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,8 +107,6 @@
 		9BD7861B13AD75100059F89E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		9BD7862A13AD76580059F89E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9BD7862B13AD76580059F89E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		9BFC758A13AD7971004E6914 /* TickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerViewController.h; sourceTree = "<group>"; };
-		9BFC758B13AD7971004E6914 /* TickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,8 +305,6 @@
 			children = (
 				9BD7862A13AD76580059F89E /* MainViewController.h */,
 				9BD7862B13AD76580059F89E /* MainViewController.m */,
-				9BFC758A13AD7971004E6914 /* TickerViewController.h */,
-				9BFC758B13AD7971004E6914 /* TickerViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -379,7 +374,6 @@
 				9BD7861613AD75100059F89E /* main.m in Sources */,
 				9BD7861913AD75100059F89E /* BTCViewAppDelegate.m in Sources */,
 				9BD7862C13AD76580059F89E /* MainViewController.m in Sources */,
-				9BFC758C13AD7971004E6914 /* TickerViewController.m in Sources */,
 				948E678F13B4FB4D00CAFC4A /* ASIAuthenticationDialog.m in Sources */,
 				948E679013B4FB4D00CAFC4A /* ASIDataCompressor.m in Sources */,
 				948E679113B4FB4D00CAFC4A /* ASIDataDecompressor.m in Sources */,
