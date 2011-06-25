@@ -59,8 +59,8 @@
     self.data = [[NSMutableArray new] autorelease];
     
     // Insert some Dummy Data
-    [self.data addObject:@"MTGox"];
-    [self.data addObject:@"BTCGuild"];
+//    [self.data addObject:@"MTGox"];
+//    [self.data addObject:@"BTCGuild"];
  }
 
 - (void)viewDidUnload {

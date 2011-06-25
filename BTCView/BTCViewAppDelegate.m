@@ -17,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 320, 480)] autorelease];
-    self.mvc = [[[MainViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+    self.mvc = [[[MainViewController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.mvc] autorelease];
     
     [self setWindow:self.window];

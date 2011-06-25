@@ -32,6 +32,10 @@
 		948E67DC13B4FE7500CAFC4A /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 948E67D813B4FE7500CAFC4A /* libz.1.2.3.dylib */; };
 		948E67DD13B4FE7500CAFC4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948E67D913B4FE7500CAFC4A /* MobileCoreServices.framework */; };
 		948E67DE13B4FE7500CAFC4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948E67DA13B4FE7500CAFC4A /* SystemConfiguration.framework */; };
+		9B543E7413B59FCE00E65BAE /* BTCGuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B543E7313B59FCE00E65BAE /* BTCGuild.m */; };
+		9B543E7813B5AD1200E65BAE /* BTCGuildUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B543E7713B5AD1200E65BAE /* BTCGuildUserData.m */; };
+		9B543E7B13B5B09600E65BAE /* BTCGuildWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B543E7A13B5B09600E65BAE /* BTCGuildWorker.m */; };
+		9B543E7E13B5B83E00E65BAE /* BTCGuildPoolData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B543E7D13B5B83D00E65BAE /* BTCGuildPoolData.m */; };
 		9BD7860913AD75100059F89E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7860813AD75100059F89E /* UIKit.framework */; };
 		9BD7860B13AD75100059F89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7860A13AD75100059F89E /* Foundation.framework */; };
 		9BD7860D13AD75100059F89E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7860C13AD75100059F89E /* CoreGraphics.framework */; };
@@ -94,6 +98,14 @@
 		948E67D813B4FE7500CAFC4A /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		948E67D913B4FE7500CAFC4A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		948E67DA13B4FE7500CAFC4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9B543E7213B59FCE00E65BAE /* BTCGuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCGuild.h; sourceTree = "<group>"; };
+		9B543E7313B59FCE00E65BAE /* BTCGuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCGuild.m; sourceTree = "<group>"; };
+		9B543E7613B5AD1200E65BAE /* BTCGuildUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCGuildUserData.h; sourceTree = "<group>"; };
+		9B543E7713B5AD1200E65BAE /* BTCGuildUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCGuildUserData.m; sourceTree = "<group>"; };
+		9B543E7913B5B09600E65BAE /* BTCGuildWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCGuildWorker.h; sourceTree = "<group>"; };
+		9B543E7A13B5B09600E65BAE /* BTCGuildWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCGuildWorker.m; sourceTree = "<group>"; };
+		9B543E7C13B5B83D00E65BAE /* BTCGuildPoolData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCGuildPoolData.h; sourceTree = "<group>"; };
+		9B543E7D13B5B83D00E65BAE /* BTCGuildPoolData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCGuildPoolData.m; sourceTree = "<group>"; };
 		9BD7860413AD75100059F89E /* BTCView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD7860813AD75100059F89E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BD7860A13AD75100059F89E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -170,6 +182,7 @@
 		948E675913B4FA6B00CAFC4A /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				9B543E7013B59FA500E65BAE /* Pool API's */,
 				948E67A913B4FBBE00CAFC4A /* SBJSON */,
 				948E675A13B4FA7A00CAFC4A /* ASIHTTPRequest */,
 			);
@@ -243,6 +256,29 @@
 				948E67C213B4FCB400CAFC4A /* SBJsonWriter.m */,
 			);
 			name = SBJSON;
+			sourceTree = "<group>";
+		};
+		9B543E7013B59FA500E65BAE /* Pool API's */ = {
+			isa = PBXGroup;
+			children = (
+				9B543E7513B5ACF800E65BAE /* BTC Guild */,
+			);
+			name = "Pool API's";
+			sourceTree = "<group>";
+		};
+		9B543E7513B5ACF800E65BAE /* BTC Guild */ = {
+			isa = PBXGroup;
+			children = (
+				9B543E7213B59FCE00E65BAE /* BTCGuild.h */,
+				9B543E7313B59FCE00E65BAE /* BTCGuild.m */,
+				9B543E7613B5AD1200E65BAE /* BTCGuildUserData.h */,
+				9B543E7713B5AD1200E65BAE /* BTCGuildUserData.m */,
+				9B543E7913B5B09600E65BAE /* BTCGuildWorker.h */,
+				9B543E7A13B5B09600E65BAE /* BTCGuildWorker.m */,
+				9B543E7C13B5B83D00E65BAE /* BTCGuildPoolData.h */,
+				9B543E7D13B5B83D00E65BAE /* BTCGuildPoolData.m */,
+			);
+			name = "BTC Guild";
 			sourceTree = "<group>";
 		};
 		9BD785F913AD75100059F89E = {
@@ -395,6 +431,10 @@
 				948E67CC13B4FCB400CAFC4A /* SBJsonTokeniser.m in Sources */,
 				948E67CD13B4FCB400CAFC4A /* SBJsonUTF8Stream.m in Sources */,
 				948E67CE13B4FCB400CAFC4A /* SBJsonWriter.m in Sources */,
+				9B543E7413B59FCE00E65BAE /* BTCGuild.m in Sources */,
+				9B543E7813B5AD1200E65BAE /* BTCGuildUserData.m in Sources */,
+				9B543E7B13B5B09600E65BAE /* BTCGuildWorker.m in Sources */,
+				9B543E7E13B5B83E00E65BAE /* BTCGuildPoolData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
