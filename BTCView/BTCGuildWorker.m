@@ -61,38 +61,3 @@
 }
 
 @end
-
-@implementation BTCGuildWorker (Modifiers)
-
-- (void)setName:(NSString *)value {
-    self.name = value;
-}
-- (void)setHashRate:(double)value {
-    self.hashRate = value;
-}
-- (void)setRoundShares:(NSInteger)value {
-    self.roundShares = value;
-}
-- (void)setRoundStales:(NSInteger)value {
-    self.roundStales = value;
-}
-- (void)setResetShares:(NSInteger)value {
-    self.resetShares = value;
-}
-- (void)setResetStales:(NSInteger)value {
-    self.resetStales = value;
-}
-- (void)setTotalShares:(NSInteger)value {
-    self.totalShares = value;
-}
-- (void)setTotalStales:(NSInteger)value {
-    self.totalStales = value;
-}
-- (void)setLastShare:(NSTimeInterval)value {
-    self.lastShare = value;
-}
-- (void)setBlocksFound:(NSInteger)value {
-    self.blocksFound = value;
-}
-
-@end

@@ -14,23 +14,14 @@
     
 }
 
-@property (nonatomic, readonly) double confirmedRewards;
-@property (nonatomic, readonly) double unconfirmedRewards;
-@property (nonatomic, readonly) double estimatedRewards;
-@property (nonatomic, readonly) double payouts;
+@property (nonatomic, assign) double confirmedRewards;
+@property (nonatomic, assign) double unconfirmedRewards;
+@property (nonatomic, assign) double estimatedRewards;
+@property (nonatomic, assign) double payouts;
 
 - (id) initWithConfirmedRewards:(double)__confirmedRewards
              unconfirmedRewards:(double)__unconfirmedRewards
                estimatedRewards:(double)__estimatedRewards
                          payuts:(double)__payouts;
-
-@end
-
-@interface BTCGuildUserData (Modifiers)
-
-- (void) setConfirmedRewards:(double)value;
-- (void) setUnconfirmedRewards:(double)value;
-- (void) setEstimatedRewards:(double)value;
-- (void) setPayouts:(double)value;
 
 @end

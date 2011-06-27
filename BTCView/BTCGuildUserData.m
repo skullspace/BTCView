@@ -38,20 +38,3 @@
 }
 
 @end
-
-@implementation BTCGuildUserData (Modifiers)
-
-- (void) setConfirmedRewards:(double)value {
-    self.confirmedRewards = value;
-}
-- (void) setUnconfirmedRewards:(double)value {
-    self.unconfirmedRewards = value;
-}
-- (void) setEstimatedRewards:(double)value {
-    self.estimatedRewards = value;
-}
-- (void) setPayouts:(double)value {
-    self.payouts = value;
-}
-
-@end

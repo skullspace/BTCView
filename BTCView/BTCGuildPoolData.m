@@ -32,23 +32,3 @@
 }
 
 @end
-
-@implementation BTCGuildPoolData (Modifiers)
-
-- (void)setHashRate:(double)value {
-    self.hashRate = value;
-}
-- (void)setActiveWorkers:(NSInteger)value {
-    self.activeWorkers = value;
-}
-- (void)setRoundShares:(NSInteger)value {
-    self.roundShares = value;
-}
-- (void)setRoundTime:(NSTimeInterval)value {
-    self.roundTime = value;
-}
-- (void)setServerSpeeds:(NSDictionary *)value {
-    self.serverSpeeds = value;
-}
-
-@end

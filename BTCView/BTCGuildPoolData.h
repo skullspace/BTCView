@@ -14,26 +14,16 @@
     NSDictionary *_serverSpeeds; // Will be stored as Key = Server Name, Value = Server Speed (Double)
 }
 
-@property (nonatomic, readonly) double hashRate;
-@property (nonatomic, readonly) NSInteger activeWorkers;
-@property (nonatomic, readonly) NSInteger roundShares;
-@property (nonatomic, readonly) NSTimeInterval roundTime;
-@property (nonatomic, retain, readonly) NSDictionary *serverSpeeds;
+@property (nonatomic, assign) double hashRate;
+@property (nonatomic, assign) NSInteger activeWorkers;
+@property (nonatomic, assign) NSInteger roundShares;
+@property (nonatomic, assign) NSTimeInterval roundTime;
+@property (nonatomic, retain) NSDictionary *serverSpeeds;
 
 - (id) initWithHashRate:(double)__hashRate
           activeWorkers:(NSInteger)__activeWorkers
             roundShares:(NSInteger)__roundShares
               roundTime:(NSTimeInterval)__roundTime
            serverSpeeds:(NSDictionary *)__serverSpeeds;
-
-@end
-
-@interface BTCGuildPoolData (Modifiers)
-
-- (void)setHashRate:(double)value;
-- (void)setActiveWorkers:(NSInteger)value;
-- (void)setRoundShares:(NSInteger)value;
-- (void)setRoundTime:(NSTimeInterval)value;
-- (void)setServerSpeeds:(NSDictionary *)value;
 
 @end

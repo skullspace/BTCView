@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface BTCGuildWorker : NSObject {
     NSString *_name;
     double _hashRate;
@@ -22,16 +21,16 @@
     NSInteger _blocksFound;
 }
 
-@property (nonatomic, retain, readonly) NSString *name;
-@property (nonatomic, readonly) double hashRate;
-@property (nonatomic, readonly) NSInteger roundShares;
-@property (nonatomic, readonly) NSInteger roundStales;
-@property (nonatomic, readonly) NSInteger resetShares;
-@property (nonatomic, readonly) NSInteger resetStales;
-@property (nonatomic, readonly) NSInteger totalShares;
-@property (nonatomic, readonly) NSInteger totalStales;
-@property (nonatomic, readonly) NSTimeInterval lastShare;
-@property (nonatomic, readonly) NSInteger blocksFound;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, assign) double hashRate;
+@property (nonatomic, assign) NSInteger roundShares;
+@property (nonatomic, assign) NSInteger roundStales;
+@property (nonatomic, assign) NSInteger resetShares;
+@property (nonatomic, assign) NSInteger resetStales;
+@property (nonatomic, assign) NSInteger totalShares;
+@property (nonatomic, assign) NSInteger totalStales;
+@property (nonatomic, assign) NSTimeInterval lastShare;
+@property (nonatomic, assign) NSInteger blocksFound;
 
 - (id)initWithName:(NSString *)__name
           hashRate:(double)__hashRate
@@ -43,20 +42,5 @@
        totalStales:(NSInteger)__totalStales
          lastShare:(NSTimeInterval)__lastShare 
        blocksFound:(NSInteger)__blocksFound;
-
-@end
-
-@interface BTCGuildWorker (Modifiers)
-
-- (void)setName:(NSString *)value;
-- (void)setHashRate:(double)value;
-- (void)setRoundShares:(NSInteger)value;
-- (void)setRoundStales:(NSInteger)value;
-- (void)setResetShares:(NSInteger)value;
-- (void)setResetStales:(NSInteger)value;
-- (void)setTotalShares:(NSInteger)value;
-- (void)setTotalStales:(NSInteger)value;
-- (void)setLastShare:(NSTimeInterval)value;
-- (void)setBlocksFound:(NSInteger)value;
 
 @end
